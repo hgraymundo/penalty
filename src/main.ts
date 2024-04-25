@@ -13,6 +13,10 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('docs', app, document);
 
-  await app.listen(process.env.PORT || 3000);
+  const port = process.env.PORT || 3000
+  console.log(`Launching NestJS app on port ${port}, URL: http://0.0.0.0:${port}`)
+  await app.listen(port);
+  
+
 }
 bootstrap();
