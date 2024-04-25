@@ -2,6 +2,9 @@
   "name": "penalty_api",
   "version": "0.0.1",
   "description": "",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "author": "",
   "private": true,
   "license": "UNLICENSED",
