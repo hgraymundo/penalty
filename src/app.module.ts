@@ -12,8 +12,7 @@ import { UserModule } from './user/user.module';
 import { PaymentLineModule } from './payment-line/payment-line.module';
 @Module({
   imports: [
-  
-  MongooseModule.forRoot('mongodb+srv://hgraydev:65nohUCNvWAUD8zm@demo-model.mger9fd.mongodb.net/People_Involved?retryWrites=true&w=majority&appName=demo-model'),
+  MongooseModule.forRoot('mongodb+srv://hgraydev:65nohUCNvWAUD8zm@demo-model.mger9fd.mongodb.net/People_Involved'),
   PenaltyModule, PenaltyTypeModule, VehicleModule, TrademarkModule, LineModule, DocumentModule, UserModule, PaymentLineModule, ],
   controllers: [AppController],
   providers: [AppService],
